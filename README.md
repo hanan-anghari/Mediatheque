@@ -1,27 +1,11 @@
 # Mediatheque
+c'est un projet médiathèque qui présente les différents titres (filmes, albumes etc...)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+## Installation
+Ouvrez le fichier du proget, lancer un terminal pour executer la commande `npm install` .
+Cette commande installera les dépendances du projet et vous permettera de lancer le serveur de développement.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Pouer Lancer le serveur de développement utiliser la commande `ng serve`. Naviguer en utilisant l'url `http://localhost:4200/` pour afficher l'application dans votre navigateur. 
+En modifiant les sources du projet, l'application se rechargera automatiquement et vous pourrez voir vos modif sans avoir à redemarer le serveur de développement.
