@@ -1,1 +1,5 @@
-<p>product-list works!</p>
+<h2>{{productCardList.titre}}</h2>
+<div class="product-card-list">
+  <app-product-card  *ngFor="let productCard of productCardList.productsCards" [card]="productCard"></app-product-card>
+</div>
+
