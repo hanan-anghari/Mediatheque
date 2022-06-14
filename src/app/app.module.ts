@@ -8,8 +8,15 @@ import { FooterComponent } from './commons/footer/footer.component';
 import { NotFoundComponent } from './commons/not-found/not-found.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
-import { ProductListComponent } from './commons/pages/product-page/product-list/product-list.component';
+import { ProductListComponent } from './pages/product-page/product-list/product-list.component';
+import { ProductCardComponent } from './pages/product-page/product-card/product-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
+let angularMaterial = [MatButtonModule, MatCardModule, MatToolbarModule, MatIconModule]
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +25,14 @@ import { ProductListComponent } from './commons/pages/product-page/product-list/
     NotFoundComponent,
     HomePageComponent,
     ProductPageComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ...angularMaterial
   ],
   providers: [],
   bootstrap: [AppComponent]
