@@ -1,19 +1,16 @@
-
-
 <mat-card class="card">
   <mat-card-header>
 
-    <mat-card-title>{{card.nom}}</mat-card-title>
+    <mat-card-title>{{ card.nom }}</mat-card-title>
 
   </mat-card-header>
-  <img mat-card-image [src]="card.img" [alt]="card.img" >
+  <img mat-card-image [src]="card.img" [alt]="card.img" />
   <mat-card-content>
     <p>
-      {{card.synopsis}}
+      {{ card.synopsis | slice : 0:350 }}...
     </p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-raised-button color="primary">Details</button>
-
   </mat-card-actions>
 </mat-card>
